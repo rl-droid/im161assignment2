@@ -1,0 +1,280 @@
+<!doctype html lang="en">
+
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+	<style>
+		.cwimg {
+			background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75)),
+				url("https://i.pinimg.com/originals/ff/02/62/ff026254506b6bf0341ee304e30663d1.jpg");
+			flex:100%;
+			padding-top: 10vw;
+			padding-bottom: 10vw;
+			height: 20%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+
+		/*edited versions of bootstrap outline buttons to each color*/
+		.btn-outline-red {
+			--bs-btn-color: #dc3545;
+			--bs-btn-border-color: #dc3545;
+			--bs-btn-hover-color: #fff;
+			--bs-btn-hover-bg: #dc3545;
+			--bs-btn-hover-border-color: #dc3545;
+			--bs-btn-focus-shadow-rgb: 220, 53, 69;
+			--bs-btn-active-color: #fff;
+			--bs-btn-active-bg: #dc3545;
+			--bs-btn-active-border-color: #dc3545;
+			--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+			--bs-btn-disabled-color: #dc3545;
+			--bs-btn-disabled-bg: transparent;
+			--bs-btn-disabled-border-color: #dc3545;
+			--bs-gradient: none
+		}
+
+		.redfont {
+			color: #dc3545;
+		}
+
+		.btn-outline-orange {
+			--bs-btn-color: #DB6F35;
+			--bs-btn-border-color: #DB6F35;
+			--bs-btn-hover-color: #fff;
+			--bs-btn-hover-bg: #DB6F35;
+			--bs-btn-hover-border-color: #DB6F35;
+			--bs-btn-focus-shadow-rgb: 220, 53, 69;
+			--bs-btn-active-color: #fff;
+			--bs-btn-active-bg: #DB6F35;
+			--bs-btn-active-border-color: #DB6F35;
+			--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+			--bs-btn-disabled-color: #DB6F35;
+			--bs-btn-disabled-bg: transparent;
+			--bs-btn-disabled-border-color: #DB6F35;
+			--bs-gradient: none
+		}
+
+		.orangefont {
+			color: #DB6F35;
+		}
+
+		.btn-outline-yellow {
+			--bs-btn-color: #DBCD35;
+			--bs-btn-border-color: #DBCD35;
+			--bs-btn-hover-color: #fff;
+			--bs-btn-hover-bg: #DBCD35;
+			--bs-btn-hover-border-color: #DBCD35;
+			--bs-btn-focus-shadow-rgb: 220, 53, 69;
+			--bs-btn-active-color: #fff;
+			--bs-btn-active-bg: #DBCD35;
+			--bs-btn-active-border-color: #DBCD35;
+			--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+			--bs-btn-disabled-color: #DBCD35;
+			--bs-btn-disabled-bg: transparent;
+			--bs-btn-disabled-border-color: #DBCD35;
+			--bs-gradient: none
+		}
+
+		.yellowfont {
+			color: #DBCD35;
+		}
+
+		.btn-outline-lime {
+			--bs-btn-color: #99DB35;
+			--bs-btn-border-color: #99DB35;
+			--bs-btn-hover-color: #fff;
+			--bs-btn-hover-bg: #99DB35;
+			--bs-btn-hover-border-color: #99DB35;
+			--bs-btn-focus-shadow-rgb: 220, 53, 69;
+			--bs-btn-active-color: #fff;
+			--bs-btn-active-bg: #99DB35;
+			--bs-btn-active-border-color: #99DB35;
+			--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+			--bs-btn-disabled-color: #99DB35;
+			--bs-btn-disabled-bg: transparent;
+			--bs-btn-disabled-border-color: #99DB35;
+			--bs-gradient: none
+		}
+
+		.limefont {
+			color: #99DB35;
+		}
+
+		.btn-outline-green {
+			--bs-btn-color: #35DB7D;
+			--bs-btn-border-color: #35DB7D;
+			--bs-btn-hover-color: #fff;
+			--bs-btn-hover-bg: #35DB7D;
+			--bs-btn-hover-border-color: #35DB7D;
+			--bs-btn-focus-shadow-rgb: 220, 53, 69;
+			--bs-btn-active-color: #fff;
+			--bs-btn-active-bg: #35DB7D;
+			--bs-btn-active-border-color: #35DB7D;
+			--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+			--bs-btn-disabled-color: #35DB7D;
+			--bs-btn-disabled-bg: transparent;
+			--bs-btn-disabled-border-color: #35DB7D;
+			--bs-gradient: none
+		}
+
+		.greenfont {
+			color: #35DB7D;
+		}
+
+		.btn-outline-aqua {
+			--bs-btn-color: #35CDDB;
+			--bs-btn-border-color: #35CDDB;
+			--bs-btn-hover-color: #fff;
+			--bs-btn-hover-bg: #35CDDB;
+			--bs-btn-hover-border-color: #35CDDB;
+			--bs-btn-focus-shadow-rgb: 220, 53, 69;
+			--bs-btn-active-color: #fff;
+			--bs-btn-active-bg: #35CDDB;
+			--bs-btn-active-border-color: #35CDDB;
+			--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+			--bs-btn-disabled-color: #35CDDB;
+			--bs-btn-disabled-bg: transparent;
+			--bs-btn-disabled-border-color: #35CDDB;
+			--bs-gradient: none
+		}
+
+		.aquafont {
+			color: #35CDDB;
+		}
+
+		.btn-outline-blue {
+			--bs-btn-color: #3575DB;
+			--bs-btn-border-color: #3575DB;
+			--bs-btn-hover-color: #fff;
+			--bs-btn-hover-bg: #3575DB;
+			--bs-btn-hover-border-color: #3575DB;
+			--bs-btn-focus-shadow-rgb: 220, 53, 69;
+			--bs-btn-active-color: #fff;
+			--bs-btn-active-bg: #3575DB;
+			--bs-btn-active-border-color: #3575DB;
+			--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+			--bs-btn-disabled-color: #3575DB;
+			--bs-btn-disabled-bg: transparent;
+			--bs-btn-disabled-border-color: #3575DB;
+			--bs-gradient: none
+		}
+
+		.bluefont {
+			color: #3575DB;
+		}
+
+		.btn-outline-indigo {
+			--bs-btn-color: #3535DB;
+			--bs-btn-border-color: #3535DB;
+			--bs-btn-hover-color: #fff;
+			--bs-btn-hover-bg: #3535DB;
+			--bs-btn-hover-border-color: #3535DB;
+			--bs-btn-focus-shadow-rgb: 220, 53, 69;
+			--bs-btn-active-color: #fff;
+			--bs-btn-active-bg: #3535DB;
+			--bs-btn-active-border-color: #3535DB;
+			--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+			--bs-btn-disabled-color: #3535DB;
+			--bs-btn-disabled-bg: transparent;
+			--bs-btn-disabled-border-color: #3535DB;
+			--bs-gradient: none
+		}
+
+		.indigofont {
+			color: #3535DB;
+		}
+
+		.btn-outline-purple {
+			--bs-btn-color: #7535DB;
+			--bs-btn-border-color: #7535DB;
+			--bs-btn-hover-color: #fff;
+			--bs-btn-hover-bg: #7535DB;
+			--bs-btn-hover-border-color: #7535DB;
+			--bs-btn-focus-shadow-rgb: 220, 53, 69;
+			--bs-btn-active-color: #fff;
+			--bs-btn-active-bg: #7535DB;
+			--bs-btn-active-border-color: #7535DB;
+			--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+			--bs-btn-disabled-color: #dc3545;
+			--bs-btn-disabled-bg: transparent;
+			--bs-btn-disabled-border-color: #7535DB;
+			--bs-gradient: none
+		}
+
+		.purplefont {
+			color: #7535DB;
+		}
+
+		.btn-outline-magenta {
+			--bs-btn-color: #C035DB;
+			--bs-btn-border-color: #C035DB;
+			--bs-btn-hover-color: #fff;
+			--bs-btn-hover-bg: #C035DB;
+			--bs-btn-hover-border-color: #C035DB;
+			--bs-btn-focus-shadow-rgb: 220, 53, 69;
+			--bs-btn-active-color: #fff;
+			--bs-btn-active-bg: #C035DB;
+			--bs-btn-active-border-color: #C035DB;
+			--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+			--bs-btn-disabled-color: #C035DB;
+			--bs-btn-disabled-bg: transparent;
+			--bs-btn-disabled-border-color: #C035DB;
+			--bs-gradient: none
+		}
+
+		.magentafont {
+			color: #C035DB;
+		}
+	</style>
+
+</head>
+
+<body style="background-color:#000;">
+
+	<header class="cwimg text-center" style="color: #fff;">
+		<h1 class="cwtext " style="font-size:10vw;">Color World</h1>
+		<h2 style="font-size:2vw;">The meanings coloring our world.</h2>
+	</header>
+
+	<nav style=" background-color:rgb(25,25,25);">
+		<div class="container">
+			<div class="row justify-content-evenly">
+				<a href="#" class="btn col btn-outline-red" style="margin:10px;" role="button">Red</a>
+				<a href="#" class="btn col btn-outline-orange" style="margin:10px;" role="button">Orange</a>
+				<a href="#" class="btn col btn-outline-yellow" style="margin:10px;" role="button">Yellow</a>
+				<a href="#" class="btn col btn-outline-lime" style="margin:10px;" role="button">Lime</a>
+				<a href="#" class="btn col btn-outline-green" style="margin:10px;" role="button">Green</a>
+				<a href="#" class="btn col btn-outline-aqua" style="margin:10px;" role="button">Aqua</a>
+				<a href="#" class="btn col btn-outline-blue" style="margin:10px;" role="button">Blue</a>
+				<a href="#" class="btn col btn-outline-indigo" style="margin:10px;" role="button">Indigo</a>
+				<a href="#" class="btn col btn-outline-purple" style="margin:10px;" role="button">Purple</a>
+				<a href="#" class="btn col btn-outline-magenta" style="margin:10px;" role="button">Magenta</a>
+			</div>
+		</div>
+	</nav>
+
+	<article class="clearfix" style="padding:3vw;">
+		<img src="https://64.media.tumblr.com/08645337880ce1c06d907a8cd9187ed4/tumblr_pc2n79v7Ru1x4pg2bo1_1280.jpg" class="col-md-4 float-md-end mb-3 ms-md-3" alt="Red-themed mood board; that of locks, flowers, hearts, bloodmoons, moody lighting, and a middle panel labeled 'I wannna be alone'.">
+		<h3 class="redfont" style="font-size:5vw;">Red</h3>
+		<p style="color:#fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed viverra tellus in hac habitasse platea dictumst. Ultricies mi eget mauris pharetra. Suspendisse sed nisi lacus sed viverra tellus in hac. Pharetra et ultrices neque ornare aenean euismod elementum. At urna condimentum mattis pellentesque id nibh tortor id. Scelerisque mauris pellentesque pulvinar pellentesque habitant. Sodales ut etiam sit amet nisl purus. Mauris vitae ultricies leo integer. Ut tortor pretium viverra suspendisse potenti nullam ac. Scelerisque viverra mauris in aliquam sem fringilla ut. Id ornare arcu odio ut sem. Lectus magna fringilla urna porttitor rhoncus dolor purus. Ut tellus elementum sagittis vitae et leo duis ut. Tempor orci dapibus ultrices in iaculis nunc sed augue lacus.
+			<br><br>
+			Varius duis at consectetur lorem donec massa. Sem fringilla ut morbi tincidunt augue interdum. Nisl nisi scelerisque eu ultrices vitae auctor. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit. Bibendum est ultricies integer quis auctor elit sed. Felis donec et odio pellentesque diam volutpat commodo sed egestas. Pulvinar neque laoreet suspendisse interdum consectetur libero. Et pharetra pharetra massa massa ultricies. Ornare lectus sit amet est placerat. Ultricies lacus sed turpis tincidunt id aliquet risus. Arcu ac tortor dignissim convallis. Lacus sed viverra tellus in hac habitasse platea dictumst. Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Amet purus gravida quis blandit turpis. Tellus integer feugiat scelerisque varius. Nunc sed id semper risus. Placerat orci nulla pellentesque dignissim enim sit amet venenatis urna. Elit eget gravida cum sociis natoque penatibus. Congue eu consequat ac felis donec et odio pellentesque diam. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit.
+			<br><br>
+			Fringilla urna porttitor rhoncus dolor purus non enim praesent elementum. Dignissim enim sit amet venenatis urna cursus eget nunc. Enim nec dui nunc mattis enim. Consequat nisl vel pretium lectus quam. At varius vel pharetra vel turpis nunc eget lorem. Velit scelerisque in dictum non consectetur a erat. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget. Tristique magna sit amet purus gravida. Et malesuada fames ac turpis egestas. Nulla porttitor massa id neque aliquam vestibulum morbi. Leo in vitae turpis massa sed elementum tempus. Ipsum faucibus vitae aliquet nec ullamcorper.
+			<br><br>
+			Ut diam quam nulla porttitor massa id neque. Amet est placerat in egestas erat. Sit amet tellus cras adipiscing enim eu turpis. Vestibulum mattis ullamcorper velit sed. Egestas fringilla phasellus faucibus scelerisque eleifend donec. Interdum consectetur libero id faucibus nisl tincidunt eget. Nisi lacus sed viverra tellus in hac habitasse platea. Mi quis hendrerit dolor magna. Et netus et malesuada fames ac turpis egestas maecenas. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Sed vulputate mi sit amet mauris commodo quis imperdiet massa. Risus nec feugiat in fermentum. Facilisis mauris sit amet massa vitae tortor condimentum lacinia. Leo urna molestie at elementum. Eros in cursus turpis massa tincidunt dui ut ornare lectus. Blandit turpis cursus in hac habitasse platea dictumst quisque. Maecenas sed enim ut sem viverra aliquet eget.
+			<br><br>
+			Id venenatis a condimentum vitae. Convallis posuere morbi leo urna molestie at elementum eu facilisis. Mi bibendum neque egestas congue quisque egestas diam. Tellus molestie nunc non blandit massa. Mattis aliquam faucibus purus in massa tempor nec. Dolor magna eget est lorem ipsum dolor sit. Cursus sit amet dictum sit amet. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Egestas diam in arcu cursus euismod. Sed viverra tellus in hac habitasse platea dictumst. Vitae sapien pellentesque habitant morbi tristique senectus. Semper auctor neque vitae tempus quam pellentesque. Enim sed faucibus turpis in eu mi bibendum.
+		</p>
+	</article>
+
+	<footer></footer>
+
+</body>
+
+</html>
