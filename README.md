@@ -1,20 +1,7 @@
-
-## will work more on this once I have time. Def will have something actually readable by Thursday.
-## weekend was really busy with family and I've got a lot of other work right now with fuse.
-
----
-
-# Old idea
-
-### topcatsworldwide
-A project to make a pseudo website: "Top Cats Worldwide", themed near-completely around cats.
+to suggesters: 
+  please help me figure out why this thing is rendering wrong, lol. i try to launch it and then the top box's shape breaks. :') love to see it.
 
 ---
 
-# New Idea
-
-### Color meanings
-A site dedicated to explaining associated color meanings to the masses. 
-Each page will be for a certain color.
-
-
+# Color World
+Dedicated to instrucitng people on color meanings, histories, general information, so on. 
